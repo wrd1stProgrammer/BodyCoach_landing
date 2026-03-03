@@ -1,0 +1,49 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.lastUpdated {
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color: #334155;
+}
+
+.content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #334155;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+.content strong {
+    color: var(--text-primary);
+}

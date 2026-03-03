@@ -1,0 +1,164 @@
+.footer {
+    background-color: var(--bg-secondary);
+    padding-top: 4rem;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+    gap: 3rem;
+}
+
+.brandColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.appIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.025em;
+}
+
+.downloadText {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+}
+
+.storeButtons {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.storeBadge {
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.storeBadge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.appleBadge {
+    height: 60px;
+    /* Account for SVG/PNG transparent padding to match Google */
+    margin-left: -6px;
+    /* Shift slightly left if padding is huge */
+}
+
+.googleBadge {
+    height: 40px;
+}
+
+.linksColumns {
+    display: flex;
+    gap: 6rem;
+    padding-top: 0.5rem;
+}
+
+.linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.linkGroup h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.linkGroup a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.linkGroup a:hover {
+    color: var(--text-primary);
+}
+
+.bottomBarWrapper {
+    border-top: 1px solid var(--border-color);
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.bottomBar p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.socialLinks a {
+    color: var(--text-primary);
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLinks a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .linksColumns {
+        flex-direction: row;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .bottomBar {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .socialLinks {
+        justify-content: center;
+    }
+}

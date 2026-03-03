@@ -1,0 +1,45 @@
+{
+    "Index": {
+        "title": "Your Personal AI Diet & Fitness Coach",
+        "subtitle": "Track your meals and exercises. Get fun, professional feedback. Build a sustainable routine.",
+        "cta": "Get Started",
+        "waitlistCta": "Join the Waitlist"
+    },
+    "CoachShowcase": {
+        "badge": "AI Personas",
+        "title": "Meet Your New Coaches",
+        "subtitle": "Choose from a variety of AI personalities or create your own custom coach to guide your fitness journey.",
+        "coach1Name": "Coach Sarah",
+        "coach1Desc": "Tough love & high energy. Pushes you to your limits.",
+        "coach2Name": "Coach Zen",
+        "coach2Desc": "Calm, mindful & focused on sustainable habits.",
+        "coach3Name": "Dr. Mike",
+        "coach3Desc": "Science-based feedback & detailed nutritional analysis.",
+        "coachCustom": "Your Custom Coach",
+        "coachCustomDesc": "You decide the personality, tone, and focus."
+    },
+    "Features": {
+        "badge": "Smart Feedback",
+        "title": "More Than Just Tracking",
+        "subtitle": "Log your meals and workouts. Your AI coach analyzes them and provides immediate, actionable feedback.",
+        "feature1Title": "Instant Nutritional Insights",
+        "feature1Desc": "Snap a photo of your meal or log text. Our advanced AI instantly calculates macros, and your personalized coach provides feedback to help you achieve your goals.",
+        "feature2Title": "Unlimited Coach Consultation",
+        "feature2Desc": "Chat with your coach anytime. Ask anything, get advice, and resolve all your questions with your personal AI guide.",
+        "feature3Title": "Complete Progress Tracking and AI suggestions",
+        "feature3Desc": "Monitor your weight, measurements, and nutrition goals. Get personalized AI suggestions to stay on track and optimize your diet.",
+        "feature4Title": "Advanced Food Search",
+        "feature4Desc": "Search for any food you want to log. BodyCoach's advanced AI model accurately and quickly finds the exact calories, carbs, protein, and fat for your meals."
+    },
+    "SocialProof": {
+        "badge": "Community",
+        "title": "Start Your Journey With BodyCoach",
+        "subtitle": "See what our early adopters are saying about their new AI coaches.",
+        "review1": "\"Having a coach that responds instantly keeps me accountable. It's like having a personal trainer in my pocket!\"",
+        "review1Name": "alex***",
+        "review2": "\"The feedback is surprisingly human and funny. Logging meals actually feels fun now.\"",
+        "review2Name": "jess***",
+        "review3": "\"Adjusting my diet based on my coach's feedback makes eating healthy feel effortless.\"",
+        "review3Name": "davi***"
+    }
+}

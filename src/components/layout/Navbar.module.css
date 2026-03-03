@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+    transition: all 0.3s ease;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -0.025em;
+}
+
+.appIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.storeLinks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navStoreBtn {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navStoreBtn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.navStoreBadge {
+    width: auto;
+    object-fit: contain;
+}
+
+.navAppleBadge {
+    height: 72px;
+    margin-right: -4px;
+}
+
+.navGoogleBadge {
+    height: 46px;
+}
+
+@media (max-width: 640px) {
+    .actions {
+        gap: 0.5rem;
+    }
+
+    .storeLinks {
+        display: none;
+        /* Hide on very small mobile to save space */
+    }
+}

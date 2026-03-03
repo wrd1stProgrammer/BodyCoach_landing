@@ -1,0 +1,45 @@
+{
+    "Index": {
+        "title": "Tu Entrenador Personal de Dieta y Fitness con IA",
+        "subtitle": "Registra tus comidas y ejercicios. Obtén comentarios divertidos y profesionales. Construye una rutina sostenible.",
+        "cta": "Empezar",
+        "waitlistCta": "Unirse a la lista de espera"
+    },
+    "CoachShowcase": {
+        "badge": "Personas IA",
+        "title": "Conoce a tus nuevos entrenadores",
+        "subtitle": "Elige entre una variedad de personalidades de IA o crea tu propio entrenador para guiar tu viaje de fitness.",
+        "coach1Name": "Entrenadora Sarah",
+        "coach1Desc": "Amor rudo y alta energía. Te empuja a tus límites.",
+        "coach2Name": "Entrenador Zen",
+        "coach2Desc": "Tranquilo, consciente y enfocado en hábitos sostenibles.",
+        "coach3Name": "Dr. Mike",
+        "coach3Desc": "Comentarios basados en la ciencia y análisis nutricional detallado.",
+        "coachCustom": "Tu Entrenador Personalizado",
+        "coachCustomDesc": "Tú decides la personalidad, el tono y el enfoque."
+    },
+    "Features": {
+        "badge": "Comentarios Inteligentes",
+        "title": "Más que un simple registro",
+        "subtitle": "Registra tus comidas y entrenamientos. Tu entrenador de IA los analiza y te da recomendaciones inmediatas.",
+        "feature1Title": "Información nutricional al instante",
+        "feature1Desc": "Toma una foto de tu comida o regístrala con texto. La IA de última generación calcula instantáneamente los macronutrientes y los comentarios de tu entrenador te ayudarán a lograr tus objetivos.",
+        "feature2Title": "Consulta ilimitada con el entrenador",
+        "feature2Desc": "Chatea con tu entrenador en cualquier momento. Pregunta lo que sea y resuelve todas tus dudas con la ayuda de tu guía personal experto.",
+        "feature3Title": "Seguimiento completo y sugerencias con IA",
+        "feature3Desc": "Monitorea tu peso, medidas y objetivos nutricionales. Recibe sugerencias personalizadas de IA para mantenerte enfocado y optimizar tu dieta.",
+        "feature4Title": "Búsqueda avanzada de alimentos",
+        "feature4Desc": "Busca cualquier alimento que quieras registrar. El avanzado modelo de IA de BodyCoach localiza rápida y exactamente las calorías, carbohidratos, proteínas y grasas para tus comidas."
+    },
+    "SocialProof": {
+        "badge": "Comunidad",
+        "title": "Comienza Tu Viaje con BodyCoach",
+        "subtitle": "Descubre lo que dicen los usuarios de todo el mundo sobre sus rutinas con la IA.",
+        "review1": "\"Tener un entrenador que responde al instante me mantiene responsable. ¡Es como tener un entrenador personal en el bolsillo!\"",
+        "review1Name": "alex***",
+        "review2": "\"Los comentarios son sorprendentemente humanos y divertidos. Registrar las comidas ahora es algo que disfruto.\"",
+        "review2Name": "jess***",
+        "review3": "\"Ajustar mi dieta según los comentarios de mi entrenador hace que comer sano sea súper fácil.\"",
+        "review3Name": "davi***"
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "Index": {
+        "title": "您的私人AI飲食與健身教練",
+        "subtitle": "記錄您的飲食和運動。獲取有趣且專業的反饋。建立可持續的習慣。",
+        "cta": "開始使用",
+        "waitlistCta": "加入候補名單"
+    },
+    "CoachShowcase": {
+        "badge": "AI角色",
+        "title": "遇見您的新教練",
+        "subtitle": "從多種AI性格中選擇，或創建您專屬的自定義教練，引導您的健身旅程。",
+        "coach1Name": "教練 莎拉",
+        "coach1Desc": "嚴厲的愛與高能量。激發您的極限。",
+        "coach2Name": "教練 禪",
+        "coach2Desc": "平靜、專注於建立可持續的好習慣。",
+        "coach3Name": "邁克博士",
+        "coach3Desc": "以科學為基礎的反饋和詳細的營養分析。",
+        "coachCustom": "自定義教練",
+        "coachCustomDesc": "由您決定性格、語氣和重點領域。"
+    },
+    "Features": {
+        "badge": "智能反饋",
+        "title": "不只是記錄",
+        "subtitle": "記錄您的飲食和鍛煉。您的AI教練會分析它們並提供即時、可行的反饋。",
+        "feature1Title": "立即獲取營養見解",
+        "feature1Desc": "拍下您的膳食照片或記錄文字。最先進的AI將立即計算宏量營養素，專屬教練的反饋將幫助您成功達成目標。",
+        "feature2Title": "無限教練諮詢",
+        "feature2Desc": "隨時與您的教練聊天。您可以詢問任何問題，並讓教練幫助您解決所有疑問。",
+        "feature3Title": "進度追蹤與AI建議",
+        "feature3Desc": "監控您的體重、身形數據和營養目標。獲得個人化的AI建議，以保持在正軌上並優化您的飲食。",
+        "feature4Title": "強大的食物搜尋",
+        "feature4Desc": "搜尋您想記錄的任何食物。BodyCoach 使用的高級 AI 模型能快速且準確地為您找出餐點的卡路里、碳水化合物、蛋白質和脂肪。"
+    },
+    "SocialProof": {
+        "badge": "社區",
+        "title": "加入 BodyCoach 的旅程",
+        "subtitle": "看看我們的早期使用者對他們的新 AI 教練有什麼評價。",
+        "review1": "「有一個能即時回應的教練讓我保持了責任感。就像口袋裡有一個私人教練！」",
+        "review1Name": "alex***",
+        "review2": "「反饋出奇地人性化且有趣。現在記錄飲食真的感覺很有趣。」",
+        "review2Name": "jess***",
+        "review3": "「聽取教練的反饋並調整飲食，讓飲食管理變得一點也不難。」",
+        "review3Name": "davi***"
+    }
+}
