@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { track } from '@vercel/analytics';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -32,10 +33,10 @@ export default function Hero() {
                         {t('subtitle')}
                     </p>
                     <div className={styles.storeButtons}>
-                        <a href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB" target="_blank" rel="noopener noreferrer" className={styles.storeBtn}>
+                        <a href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB" target="_blank" rel="noopener noreferrer" className={styles.storeBtn} onClick={() => track('App_Store_Clicked', { location: 'Hero' })}>
                             <img src="/appstore.png" alt="Download on the App Store" className={`${styles.storeBadge} ${styles.appleBadge}`} />
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.bodycode" target="_blank" rel="noopener noreferrer" className={styles.storeBtn}>
+                        <a href="https://play.google.com/store/apps/details?id=com.bodycode" target="_blank" rel="noopener noreferrer" className={styles.storeBtn} onClick={() => track('Google_Play_Clicked', { location: 'Hero' })}>
                             <img src="/playstore.png" alt="Get it on Google Play" className={`${styles.storeBadge} ${styles.googleBadge}`} />
                         </a>
                     </div>

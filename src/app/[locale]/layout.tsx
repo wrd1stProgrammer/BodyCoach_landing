@@ -6,6 +6,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import '../../styles/globals.css';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
     title: {
@@ -50,6 +51,7 @@ export default async function LocaleLayout({
                     {children}
                     <Footer />
                 </NextIntlClientProvider>
+                <Analytics />
             </body>
         </html>
     );
