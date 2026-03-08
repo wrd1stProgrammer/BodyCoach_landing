@@ -141,24 +141,64 @@
 }
 
 @media (max-width: 768px) {
+    .footer {
+        padding-top: 2.5rem;
+    }
+
     .footerContainer {
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
+        padding-bottom: 2rem;
     }
 
     .linksColumns {
         flex-direction: row;
-        gap: 3rem;
+        gap: 2.25rem;
         flex-wrap: wrap;
+        padding-top: 0;
     }
 
     .bottomBar {
         flex-direction: column-reverse;
-        gap: 1.5rem;
+        gap: 1rem;
         text-align: center;
+        padding: 1rem 0 0.75rem;
     }
 
     .socialLinks {
         justify-content: center;
+    }
+
+    .brand {
+        margin-bottom: 1.25rem;
+    }
+
+    .storeButtons {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding-top: 2rem;
+    }
+
+    .footerContainer {
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .linksColumns {
+        width: 100%;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .linkGroup {
+        gap: 0.875rem;
+    }
+
+    .bottomBar {
+        gap: 0.75rem;
     }
 }
