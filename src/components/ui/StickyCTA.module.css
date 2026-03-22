@@ -1,0 +1,113 @@
+.stickyBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(229, 231, 235, 0.6);
+    box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+    padding: 0.75rem 1.5rem;
+}
+
+.inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textWrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.appName {
+    font-size: 0.9375rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.tagline {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.storeBtn {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.storeBtn:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+.badge {
+    width: auto;
+    object-fit: contain;
+}
+
+.appleBadge {
+    height: 52px;
+}
+
+.googleBadge {
+    height: 34px;
+}
+
+@media (max-width: 640px) {
+    .stickyBar {
+        padding: 0.625rem 1rem;
+    }
+
+    .textWrap {
+        display: none;
+    }
+
+    .icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .appleBadge {
+        height: 44px;
+    }
+
+    .googleBadge {
+        height: 28px;
+    }
+}

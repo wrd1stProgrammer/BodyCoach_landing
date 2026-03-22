@@ -1,0 +1,137 @@
+.section {
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #09152b 0%, #0d1e40 50%, #09152b 100%);
+    /* Deep navy blue, no purple tint */
+}
+
+.bgGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(37, 99, 235, 0.15) 0%, rgba(14, 165, 233, 0.08) 40%, transparent 70%);
+    /* Pure blue/cyan glow */
+    pointer-events: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.iconRow {
+    margin-bottom: 1.5rem;
+}
+
+.appIcon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.trustLine {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.trustItem {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+
+.storeButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.storeBtn {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.storeBtn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.storeBadge {
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.appleBadge {
+    height: 84px;
+    margin-right: -6px;
+}
+
+.googleBadge {
+    height: 54px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .appIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .storeButtons {
+        flex-direction: column;
+        gap: 0.375rem;
+    }
+
+    .trustLine {
+        gap: 0.375rem;
+    }
+}

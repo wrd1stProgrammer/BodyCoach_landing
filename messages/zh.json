@@ -2,6 +2,8 @@
     "Index": {
         "title": "您的私人AI飲食與健身教練",
         "subtitle": "記錄您的飲食和運動。獲取有趣且專業的反饋。建立可持續的習慣。",
+        "badge": "⭐ 5星評分 · 免費使用",
+        "trustLine": "✓ 免費使用",
         "cta": "開始使用",
         "waitlistCta": "加入候補名單"
     },
@@ -31,6 +33,17 @@
         "feature4Title": "強大的食物搜尋",
         "feature4Desc": "搜尋您想記錄的任何食物。BodyCoach 使用的高級 AI 模型能快速且準確地為您找出餐點的卡路里、碳水化合物、蛋白質和脂肪。"
     },
+    "HowItWorks": {
+        "badge": "輕鬆開始",
+        "title": "3步即可開始",
+        "subtitle": "從下載到首次教練反饋，僅需2分鐘。",
+        "step1Title": "下載應用",
+        "step1Desc": "在 App Store 或 Google Play 免費下載 BodyCoach。",
+        "step2Title": "選擇教練",
+        "step2Desc": "從20位以上的AI教練中選擇，或創建自己獨特風格的專屬教練。",
+        "step3Title": "開始記錄",
+        "step3Desc": "用照片或文字記錄您的膳食。AI教練會立即提供個性化反饋。"
+    },
     "SocialProof": {
         "badge": "社區",
         "title": "加入 BodyCoach 的旅程",
@@ -41,5 +54,14 @@
         "review2Name": "jess***",
         "review3": "「聽取教練的反饋並調整飲食，讓飲食管理變得一點也不難。」",
         "review3Name": "davi***"
+    },
+    "FinalCTA": {
+        "title": "準備好改變您的健康習慣了嗎？",
+        "subtitle": "已經有眾多用戶正在與AI教練一起建立更健康的習慣。",
+        "rating": "5星評分",
+        "freeTrial": "免費使用"
+    },
+    "StickyCTA": {
+        "tagline": "AI飲食與健身教練"
     }
 }

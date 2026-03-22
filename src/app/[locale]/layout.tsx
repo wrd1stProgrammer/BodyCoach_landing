@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import StickyCTA from '@/components/ui/StickyCTA';
 import '../../styles/globals.css';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
@@ -50,9 +51,11 @@ export default async function LocaleLayout({
                     <Navbar />
                     {children}
                     <Footer />
+                    <StickyCTA />
                 </NextIntlClientProvider>
                 <Analytics />
             </body>
         </html>
     );
 }
+

@@ -2,6 +2,8 @@
     "Index": {
         "title": "Your Personal AI Diet & Fitness Coach",
         "subtitle": "Track your meals and exercises. Get fun, professional feedback. Build a sustainable routine.",
+        "badge": "⭐ 5-Star Rating · Free to Use",
+        "trustLine": "✓ Free to use",
         "cta": "Get Started",
         "waitlistCta": "Join the Waitlist"
     },
@@ -31,6 +33,17 @@
         "feature4Title": "Advanced Food Search",
         "feature4Desc": "Search for any food you want to log. BodyCoach's advanced AI model accurately and quickly finds the exact calories, carbs, protein, and fat for your meals."
     },
+    "HowItWorks": {
+        "badge": "Easy Start",
+        "title": "Get Started in 3 Steps",
+        "subtitle": "From download to your first coaching feedback in under 2 minutes.",
+        "step1Title": "Download the App",
+        "step1Desc": "Get BodyCoach free on the App Store or Google Play.",
+        "step2Title": "Choose Your Coach",
+        "step2Desc": "Pick from 20+ AI coach personalities or create your own custom coach with a unique style.",
+        "step3Title": "Start Tracking",
+        "step3Desc": "Log your meals with a photo or text. Get instant, personalized feedback from your AI coach."
+    },
     "SocialProof": {
         "badge": "Community",
         "title": "Start Your Journey With BodyCoach",
@@ -41,5 +54,14 @@
         "review2Name": "jess***",
         "review3": "\"Adjusting my diet based on my coach's feedback makes eating healthy feel effortless.\"",
         "review3Name": "davi***"
+    },
+    "FinalCTA": {
+        "title": "Ready to Transform Your Routine?",
+        "subtitle": "Join thousands who are already building healthier habits with their personal AI coach.",
+        "rating": "5-Star Rating",
+        "freeTrial": "Free to Use"
+    },
+    "StickyCTA": {
+        "tagline": "Your AI Diet & Fitness Coach"
     }
 }

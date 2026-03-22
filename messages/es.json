@@ -2,6 +2,8 @@
     "Index": {
         "title": "Tu Entrenador Personal de Dieta y Fitness con IA",
         "subtitle": "Registra tus comidas y ejercicios. Obtén comentarios divertidos y profesionales. Construye una rutina sostenible.",
+        "badge": "⭐ 5 Estrellas · Gratis",
+        "trustLine": "✓ Gratis para usar",
         "cta": "Empezar",
         "waitlistCta": "Unirse a la lista de espera"
     },
@@ -31,6 +33,17 @@
         "feature4Title": "Búsqueda avanzada de alimentos",
         "feature4Desc": "Busca cualquier alimento que desees registrar. El modelo avanzado de IA de BodyCoach encuentra de forma rápida y precisa las calorías, carbohidratos, proteínas y grasas exactas para tus comidas."
     },
+    "HowItWorks": {
+        "badge": "Inicio Fácil",
+        "title": "Comienza en 3 Pasos",
+        "subtitle": "De la descarga a tu primer comentario del coach en menos de 2 minutos.",
+        "step1Title": "Descarga la App",
+        "step1Desc": "Obtén BodyCoach gratis en App Store o Google Play.",
+        "step2Title": "Elige Tu Entrenador",
+        "step2Desc": "Elige entre más de 20 personalidades de entrenadores IA o crea tu propio entrenador personalizado.",
+        "step3Title": "Empieza a Registrar",
+        "step3Desc": "Registra tus comidas con una foto o texto. Recibe comentarios personalizados al instante de tu entrenador IA."
+    },
     "SocialProof": {
         "badge": "Comunidad",
         "title": "Comienza Tu Viaje con BodyCoach",
@@ -41,5 +54,14 @@
         "review2Name": "jess***",
         "review3": "\"Ajustar mi dieta en base a los comentarios de mi entrenador hace que comer saludablemente sea muy fácil.\"",
         "review3Name": "davi***"
+    },
+    "FinalCTA": {
+        "title": "¿Listo para transformar tu rutina?",
+        "subtitle": "Únete a miles de personas que ya están creando hábitos más saludables con su entrenador personal de IA.",
+        "rating": "5 Estrellas",
+        "freeTrial": "Gratis para usar"
+    },
+    "StickyCTA": {
+        "tagline": "Tu Entrenador IA de Dieta y Fitness"
     }
 }
