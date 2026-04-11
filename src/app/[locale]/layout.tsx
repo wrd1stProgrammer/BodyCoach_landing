@@ -1,33 +1,21 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import StructuredData from '@/components/seo/StructuredData';
 import StickyCTA from '@/components/ui/StickyCTA';
 import '../../styles/globals.css';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
+import { buildOrganizationSchema, buildSiteMetadata, isSeoLocale } from '@/lib/seo';
 
-export const metadata: Metadata = {
-    title: {
-        template: '%s | BodyCoach',
-        default: 'BodyCoach - Your Personal AI Diet, Fitness Coach & Calorie Tracker',
-    },
-    description: 'Track your meals, calories, and workouts. Your AI coach analyzes them and provides immediate, actionable feedback to build a sustainable routine.',
-    keywords: ['AI Diet Coach', 'Calorie Tracker', 'Fitness App', 'Meal Logger', 'Macro Tracker', 'BodyCoach'],
-    metadataBase: new URL('https://bodycoach.ai'), // Change to actual domain when you have one
-    alternates: {
-        languages: {
-            'en': '/en',
-            'ko': '/ko',
-            'ja': '/ja',
-            'zh': '/zh',
-            'es': '/es',
-            'es-MX': '/es-MX',
-        },
-    },
-};
+export const metadata: Metadata = buildSiteMetadata();
+
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
     children,
@@ -38,15 +26,17 @@ export default async function LocaleLayout({
 }) {
     const { locale } = await params;
 
-    if (!routing.locales.includes(locale as any)) {
+    if (!isSeoLocale(locale)) {
         notFound();
     }
 
+    setRequestLocale(locale);
     const messages = await getMessages();
 
     return (
         <html lang={locale}>
             <body>
+                <StructuredData data={[buildOrganizationSchema()]} />
                 <NextIntlClientProvider messages={messages}>
                     <Navbar />
                     {children}
@@ -58,4 +48,3 @@ export default async function LocaleLayout({
         </html>
     );
 }
-

@@ -1,11 +1,8 @@
-import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import LanguageSwitcher from '../ui/LanguageSwitcher';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
-    const t = useTranslations('Index');
-
     return (
         <header className={styles.header}>
             <div className={`main-container ${styles.navContainer}`}>
