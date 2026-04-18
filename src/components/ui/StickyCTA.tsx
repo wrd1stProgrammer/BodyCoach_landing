@@ -3,11 +3,15 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { track } from '@vercel/analytics';
+import { usePathname } from 'next/navigation';
+import TrackedStoreLink from '@/components/analytics/TrackedStoreLink';
+import { appStoreUrl, playStoreUrl } from '@/lib/site';
 import styles from './StickyCTA.module.css';
 
 export default function StickyCTA() {
     const t = useTranslations('StickyCTA');
+    const pathname = usePathname();
+    const isBlogPage = pathname?.includes('/blog');
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
@@ -21,7 +25,7 @@ export default function StickyCTA() {
 
     return (
         <AnimatePresence>
-            {visible && (
+            {!isBlogPage && visible && (
                 <motion.div
                     className={styles.stickyBar}
                     initial={{ y: 100, opacity: 0 }}
@@ -38,24 +42,26 @@ export default function StickyCTA() {
                             </div>
                         </div>
                         <div className={styles.buttons}>
-                            <a
-                                href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB"
+                            <TrackedStoreLink
+                                href={appStoreUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.storeBtn}
-                                onClick={() => track('App_Store_Clicked', { location: 'StickyCTA' })}
+                                platform="app_store"
+                                location="StickyCTA"
                             >
                                 <img src="/appstore.png" alt="App Store" className={`${styles.badge} ${styles.appleBadge}`} />
-                            </a>
-                            <a
-                                href="https://play.google.com/store/apps/details?id=com.bodycode"
+                            </TrackedStoreLink>
+                            <TrackedStoreLink
+                                href={playStoreUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.storeBtn}
-                                onClick={() => track('Google_Play_Clicked', { location: 'StickyCTA' })}
+                                platform="play_store"
+                                location="StickyCTA"
                             >
                                 <img src="/playstore.png" alt="Google Play" className={`${styles.badge} ${styles.googleBadge}`} />
-                            </a>
+                            </TrackedStoreLink>
                         </div>
                     </div>
                 </motion.div>

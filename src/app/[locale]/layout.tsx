@@ -1,11 +1,14 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 import { routing } from '@/i18n/routing';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import StructuredData from '@/components/seo/StructuredData';
 import StickyCTA from '@/components/ui/StickyCTA';
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+import MarketingTracker from '@/components/analytics/MarketingTracker';
 import '../../styles/globals.css';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
@@ -37,10 +40,16 @@ export default async function LocaleLayout({
         <html lang={locale}>
             <body>
                 <StructuredData data={[buildOrganizationSchema()]} />
+                <Suspense fallback={null}>
+                    <GoogleAnalytics />
+                </Suspense>
                 <NextIntlClientProvider messages={messages}>
-                    <Navbar />
+                    <Suspense fallback={null}>
+                        <MarketingTracker />
+                    </Suspense>
+                    <Navbar locale={locale} />
                     {children}
-                    <Footer />
+                    <Footer locale={locale} />
                     <StickyCTA />
                 </NextIntlClientProvider>
                 <Analytics />

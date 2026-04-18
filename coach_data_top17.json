@@ -423,5 +423,80 @@
             "zh": "才華並不存在，這全是執著. 我們不是來參加的，我們是來統治的！給我練好基本功！"
         },
         "image_url": "https://res.cloudinary.com/dxvka9bm4/image/upload/v1768119725/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-01-11_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.21.31_kuuxwn.png"
+    },
+    {
+        "id": 24,
+        "name": {
+            "en": "Elodie",
+            "es": "Elisa",
+            "ja": "みのり",
+            "ko": "서린",
+            "zh": "若寧"
+        },
+        "title": {
+            "en": "Habit Reset Coach",
+            "es": "Coach de Hábitos",
+            "ja": "習慣リセットコーチ",
+            "ko": "습관 리셋 코치",
+            "zh": "習慣重整教練"
+        },
+        "quote": {
+            "en": "We do not need a dramatic reset. We need one clean win today.",
+            "es": "No hace falta reiniciarlo todo. Hoy basta con una victoria limpia.",
+            "ja": "急に全部変えなくて大丈夫。今日は一つだけ、きれいに終わらせましょう。",
+            "ko": "급하게 다 바꿀 필요 없어요. 오늘 할 한 가지만 깔끔하게 끝내요.",
+            "zh": "不用全部重啟。先把今天這一個小勝利做好。"
+        },
+        "image_url": "https://res.cloudinary.com/dxvka9bm4/image/upload/q_auto/f_auto/v1776405245/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-04-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.53.49_rnkp8t.png"
+    },
+    {
+        "id": 25,
+        "name": {
+            "en": "Tessa",
+            "es": "Vega",
+            "ja": "紗英",
+            "ko": "지안",
+            "zh": "芷安"
+        },
+        "title": {
+            "en": "Busy Life Coach",
+            "es": "Coach Vida Ocupada",
+            "ja": "多忙ライフコーチ",
+            "ko": "바쁜 일상 코치",
+            "zh": "忙碌生活教練"
+        },
+        "quote": {
+            "en": "You do not need a perfect routine. You need options that still work on your busiest day.",
+            "es": "No necesitas un día perfecto. Necesitas decisiones que sigan funcionando cuando todo va con prisa.",
+            "ja": "完璧な一日は要りません。忙しい日でも崩れない選択肢があれば十分です。",
+            "ko": "완벽한 하루는 필요 없어요. 바쁜 날에도 안 무너지는 선택 몇 개면 충분해요.",
+            "zh": "你不需要完美的一天。你需要的是在最忙的日子裡也能成立的幾個選擇。"
+        },
+        "image_url": "https://res.cloudinary.com/dxvka9bm4/image/upload/q_auto/f_auto/v1776397834/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-04-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_12.43.25_gvmhjm.png"
+    },
+    {
+        "id": 26,
+        "name": {
+            "en": "Sloane",
+            "es": "Candela",
+            "ja": "芹奈",
+            "ko": "채아",
+            "zh": "采妍"
+        },
+        "title": {
+            "en": "Glute Sculpt Coach",
+            "es": "Coach Glúteos",
+            "ja": "ヒップメイクコーチ",
+            "ko": "힙 메이크 코치",
+            "zh": "臀腿塑形教練"
+        },
+        "quote": {
+            "en": "Glutes are not luck. They are built with tension, patience, and honest reps.",
+            "es": "Los glúteos no son suerte. Se construyen con tensión, paciencia y repeticiones honestas.",
+            "ja": "ヒップは生まれつきではありません。正しい刺激でラインは変わります。",
+            "ko": "힙은 타고나는 게 아니라 설계하는 거예요. 자극만 제대로 넣으면 라인은 달라져요.",
+            "zh": "臀腿線條不是靠運氣，是靠張力、耐心，還有每一下都做紮實。"
+        },
+        "image_url": "https://res.cloudinary.com/dxvka9bm4/image/upload/q_auto/f_auto/v1776404541/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2026-04-17_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_2.42.04_gqtxqw.png"
     }
 ]

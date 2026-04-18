@@ -6,7 +6,7 @@ import { ChangeEvent, useTransition } from 'react';
 import styles from './LanguageSwitcher.module.css';
 import { Globe } from 'lucide-react';
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ tone = 'default' }: { tone?: 'default' | 'editorial' }) {
     const [isPending, startTransition] = useTransition();
     const locale = useLocale();
     const router = useRouter();
@@ -20,10 +20,10 @@ export default function LanguageSwitcher() {
     }
 
     return (
-        <div className={styles.wrapper}>
-            <Globe className={styles.icon} size={18} />
+        <div className={`${styles.wrapper} ${tone === 'editorial' ? styles.wrapperEditorial : ''}`}>
+            <Globe className={`${styles.icon} ${tone === 'editorial' ? styles.iconEditorial : ''}`} size={18} />
             <select
-                className={styles.select}
+                className={`${styles.select} ${tone === 'editorial' ? styles.selectEditorial : ''}`}
                 defaultValue={locale}
                 onChange={onSelectChange}
                 disabled={isPending}

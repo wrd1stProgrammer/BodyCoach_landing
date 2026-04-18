@@ -11,7 +11,7 @@ export default function Features() {
 
     const features = [
         {
-            id: 0,
+            id: 'nutrition',
             title: t('feature1Title'),
             desc: t('feature1Desc'),
             icon: (
@@ -24,7 +24,23 @@ export default function Features() {
             imageSrc: "/landing-coach.PNG",
         },
         {
-            id: 1,
+            id: 'next-meal',
+            title: t('feature5Title'),
+            desc: t('feature5Desc'),
+            icon: (
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M4 11a8 8 0 0 1 16 0" />
+                    <path d="M2 11h20" />
+                    <path d="M12 11v10" />
+                    <path d="M8 21h8" />
+                    <path d="M17 4l1-1" />
+                    <path d="M19.5 6.5H21" />
+                </svg>
+            ),
+            imageSrc: "/landing-next-feedback.PNG",
+        },
+        {
+            id: 'consultation',
             title: t('feature2Title'),
             desc: t('feature2Desc'),
             icon: (
@@ -35,7 +51,7 @@ export default function Features() {
             imageSrc: "/landing-chat.PNG",
         },
         {
-            id: 2,
+            id: 'progress',
             title: t('feature3Title'),
             desc: t('feature3Desc'),
             icon: (
@@ -46,7 +62,7 @@ export default function Features() {
             imageSrc: "/landing-report.PNG",
         },
         {
-            id: 3,
+            id: 'search',
             title: t('feature4Title'),
             desc: t('feature4Desc'),
             icon: (

@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
 import { getSeoHomeContent, seoLandingSlugs, type SeoFaq, type SeoPageSlug } from '@/lib/seo-content';
-import { getLocalizedUrl, siteConfig } from '@/lib/site';
+import { appStoreUrl, getLocalizedUrl, playStoreUrl, siteConfig } from '@/lib/site';
 import type { Locale } from '@/lib/seo-content';
-
-const appStoreUrl = 'https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB';
-const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.bodycode';
 
 export function isSeoLocale(locale: string): locale is Locale {
     return siteConfig.locales.some((value) => value === locale);
@@ -70,6 +67,7 @@ export function buildPageMetadata({
     const url = getLocalizedUrl(locale, pathname);
 
     return {
+        metadataBase: new URL(siteConfig.url),
         title,
         description,
         keywords,

@@ -14,9 +14,22 @@
     background-color: var(--border-color);
 }
 
+.wrapperEditorial {
+    background: rgba(255, 252, 246, 0.92);
+    border-color: rgba(18, 24, 38, 0.1);
+}
+
+.wrapperEditorial:hover {
+    background: rgba(246, 240, 231, 0.98);
+}
+
 .icon {
     color: var(--text-secondary);
     flex-shrink: 0;
+}
+
+.iconEditorial {
+    color: #596273;
 }
 
 .select {
@@ -45,4 +58,31 @@
 .select:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.selectEditorial {
+    color: #111827;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 0.4rem;
+        padding: 0.45rem 0.65rem;
+    }
+
+    .select {
+        max-width: 6.25rem;
+        font-size: 0.82rem;
+        padding-right: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 0.42rem 0.55rem;
+    }
+
+    .select {
+        max-width: 5.3rem;
+    }
 }

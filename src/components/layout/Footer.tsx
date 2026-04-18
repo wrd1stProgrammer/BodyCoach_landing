@@ -1,14 +1,20 @@
 "use client";
 
 import { Link } from '@/i18n/routing';
+import { usePathname } from 'next/navigation';
+import TrackedStoreLink from '@/components/analytics/TrackedStoreLink';
+import { isBlogLocale } from '@/lib/blog-content';
+import { appStoreUrl, playStoreUrl } from '@/lib/site';
 import { track } from '@vercel/analytics';
 import styles from './Footer.module.css';
 
-export default function Footer() {
+export default function Footer({ locale }: { locale: string }) {
     const year = new Date().getFullYear();
+    const pathname = usePathname();
+    const isBlogPage = pathname?.includes('/blog');
 
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} ${isBlogPage ? styles.blogFooter : ''}`}>
             <div className={`main-container ${styles.footerContainer}`}>
 
                 {/* Brand & Download Column */}
@@ -21,12 +27,12 @@ export default function Footer() {
                     <p className={styles.downloadText}>Download BodyCoach</p>
 
                     <div className={styles.storeButtons}>
-                        <a href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB" target="_blank" rel="noopener noreferrer" onClick={() => track('App_Store_Clicked', { location: 'Footer' })}>
+                        <TrackedStoreLink href={appStoreUrl} target="_blank" rel="noopener noreferrer" platform="app_store" location="Footer">
                             <img src="/appstore.png" alt="Download on the App Store" className={`${styles.storeBadge} ${styles.appleBadge}`} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.bodycode" target="_blank" rel="noopener noreferrer" onClick={() => track('Google_Play_Clicked', { location: 'Footer' })}>
+                        </TrackedStoreLink>
+                        <TrackedStoreLink href={playStoreUrl} target="_blank" rel="noopener noreferrer" platform="play_store" location="Footer">
                             <img src="/playstore.png" alt="Get it on Google Play" className={`${styles.storeBadge} ${styles.googleBadge}`} />
-                        </a>
+                        </TrackedStoreLink>
                     </div>
                 </div>
 
@@ -36,6 +42,16 @@ export default function Footer() {
                         <h4>Legal</h4>
                         <Link href="/privacy">Privacy Policy</Link>
                         <Link href="/terms">Terms of use</Link>
+                    </div>
+
+                    <div className={styles.linkGroup}>
+                        <h4>Explore</h4>
+                        {isBlogLocale(locale) ? (
+                            <Link href="/blog">Blog</Link>
+                        ) : (
+                            <Link href="/blog" locale="en">Blog</Link>
+                        )}
+                        <Link href="/ai-fitness-coach">AI Fitness Coach</Link>
                     </div>
 
                     <div className={styles.linkGroup}>

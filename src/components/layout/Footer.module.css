@@ -3,6 +3,10 @@
     padding-top: 4rem;
 }
 
+.blogFooter {
+    background: #fbf8f2;
+}
+
 .footerContainer {
     display: flex;
     justify-content: space-between;
@@ -109,6 +113,38 @@
     border-top: 1px solid var(--border-color);
 }
 
+.blogFooter .footerContainer,
+.blogFooter .bottomBar {
+    width: min(100%, 47rem);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.blogFooter .footerContainer {
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blogFooter .downloadText,
+.blogFooter .linkGroup a,
+.blogFooter .bottomBar p {
+    color: #5f697c;
+}
+
+.blogFooter .brand,
+.blogFooter .linkGroup h4,
+.blogFooter .socialLinks a {
+    color: #111827;
+}
+
+.blogFooter .bottomBarWrapper {
+    border-top: 1px solid rgba(18, 24, 38, 0.12);
+}
+
+.blogFooter .linksColumns {
+    gap: 3rem;
+}
+
 .bottomBar {
     display: flex;
     justify-content: space-between;
@@ -176,6 +212,15 @@
     .storeButtons {
         gap: 0.5rem;
     }
+
+    .blogFooter .footerContainer,
+    .blogFooter .bottomBar {
+        width: 100%;
+    }
+
+    .blogFooter .linksColumns {
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -200,5 +245,14 @@
 
     .bottomBar {
         gap: 0.75rem;
+    }
+
+    .blogFooter .footerContainer {
+        padding-bottom: 1.25rem;
+    }
+
+    .blogFooter .linksColumns {
+        flex-direction: column;
+        gap: 1.25rem;
     }
 }

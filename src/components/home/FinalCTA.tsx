@@ -2,7 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { track } from '@vercel/analytics';
+import TrackedStoreLink from '@/components/analytics/TrackedStoreLink';
+import { appStoreUrl, playStoreUrl } from '@/lib/site';
 import styles from './FinalCTA.module.css';
 
 export default function FinalCTA() {
@@ -33,12 +34,12 @@ export default function FinalCTA() {
                         <span className={styles.trustItem}>{t('freeTrial')}</span>
                     </div>
                     <div className={styles.storeButtons}>
-                        <a href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB" target="_blank" rel="noopener noreferrer" className={styles.storeBtn} onClick={() => track('App_Store_Clicked', { location: 'FinalCTA' })}>
+                        <TrackedStoreLink href={appStoreUrl} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} platform="app_store" location="FinalCTA">
                             <img src="/appstore.png" alt="Download on the App Store" className={`${styles.storeBadge} ${styles.appleBadge}`} />
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.bodycode" target="_blank" rel="noopener noreferrer" className={styles.storeBtn} onClick={() => track('Google_Play_Clicked', { location: 'FinalCTA' })}>
+                        </TrackedStoreLink>
+                        <TrackedStoreLink href={playStoreUrl} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} platform="play_store" location="FinalCTA">
                             <img src="/playstore.png" alt="Get it on Google Play" className={`${styles.storeBadge} ${styles.googleBadge}`} />
-                        </a>
+                        </TrackedStoreLink>
                     </div>
                 </motion.div>
             </div>

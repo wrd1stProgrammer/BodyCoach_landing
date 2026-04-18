@@ -1,5 +1,7 @@
 import { Link } from '@/i18n/routing';
 import type { SeoLocale, SeoPageContent } from '@/lib/seo-content';
+import TrackedStoreLink from '@/components/analytics/TrackedStoreLink';
+import { appStoreUrl } from '@/lib/site';
 import styles from './SeoSurface.module.css';
 
 type SeoSurfaceProps = {
@@ -18,14 +20,16 @@ export default function SeoSurface({ locale, content }: SeoSurfaceProps) {
                         <p className={styles.description}>{content.description}</p>
 
                         <div className={styles.actions}>
-                            <a
-                                href="https://apps.apple.com/kr/app/bodycoach-ai-diet-workout-log/id6756229086?l=en-GB"
+                            <TrackedStoreLink
+                                href={appStoreUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.primaryButton}
+                                platform="app_store"
+                                location="SeoSurfaceHero"
                             >
                                 {content.cta.primary}
-                            </a>
+                            </TrackedStoreLink>
                             <a
                                 href="#seo-pages"
                                 className={styles.secondaryButton}
