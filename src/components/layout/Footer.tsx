@@ -62,6 +62,15 @@ export default function Footer({ locale }: { locale: string }) {
 
             </div>
 
+            {/* Business Information Section */}
+            <div className={styles.bottomBarWrapper}>
+                <div className={`main-container ${styles.businessInfo}`}>
+                    <span><b>상호명</b> 세른(SERN)</span>
+                    <span><b>사업자등록번호</b> 418-11-83101</span>
+                    <span><b>주소지</b> 광주광역시 북구 용주로30번길 88(용봉동)</span>
+                </div>
+            </div>
+
             {/* Bottom Bar: Copyright & Socials */}
             <div className={styles.bottomBarWrapper}>
                 <div className={`main-container ${styles.bottomBar}`}>

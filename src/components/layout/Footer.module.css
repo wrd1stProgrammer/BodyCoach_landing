@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--bg-secondary);
     padding-top: 4rem;
+    padding-bottom: 6rem; /* Extra space for sticky CTA */
 }
 
 .blogFooter {
@@ -158,6 +159,36 @@
     margin: 0;
 }
 
+.businessInfo {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+.businessInfo span {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.businessInfo b {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.blogFooter .businessInfo {
+    border-top: 1px solid rgba(18, 24, 38, 0.12);
+    color: #5f697c;
+}
+
+.blogFooter .businessInfo b {
+    color: #111827;
+}
+
 .socialLinks {
     display: flex;
     align-items: center;
@@ -254,5 +285,12 @@
     .blogFooter .linksColumns {
         flex-direction: column;
         gap: 1.25rem;
+    }
+
+    .businessInfo {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+        text-align: left;
     }
 }
