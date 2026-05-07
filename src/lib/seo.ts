@@ -23,8 +23,8 @@ export function buildSiteMetadata(): Metadata {
             images: [
                 {
                     url: `${siteConfig.url}/opengraph-image.png`,
-                    width: 1200,
-                    height: 630,
+                    width: 1024,
+                    height: 500,
                     alt: siteConfig.name,
                 },
             ],
@@ -84,8 +84,8 @@ export function buildPageMetadata({
             images: [
                 {
                     url: `${siteConfig.url}/opengraph-image.png`,
-                    width: 1200,
-                    height: 630,
+                    width: 1024,
+                    height: 500,
                     alt: title,
                 },
             ],
